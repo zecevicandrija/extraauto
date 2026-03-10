@@ -2,8 +2,8 @@
     position: relative;
     padding: 160px 0 100px;
     min-height: 100vh;
-    background-color: #09090b;
-    color: #f4f4f5;
+    background-color: #f8fafc;
+    color: #0f172a;
     overflow: hidden;
 }
 
@@ -18,10 +18,9 @@
     position: absolute;
     inset: 0;
     background-image:
-        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
     background-size: 50px 50px;
-    opacity: 0.5;
 }
 
 .bgOrb {
@@ -30,7 +29,7 @@
     right: -5%;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(228, 51, 58, 0.1) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(228, 51, 58, 0.05) 0%, transparent 60%);
     border-radius: 50%;
     filter: blur(80px);
 }
@@ -41,14 +40,13 @@
     left: -10%;
     width: 700px;
     height: 700px;
-    background: radial-gradient(circle, rgba(228, 51, 58, 0.08) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(228, 51, 58, 0.05) 0%, transparent 60%);
     border-radius: 50%;
     filter: blur(90px);
 }
 
-
 .container {
-    max-width: 1840px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 40px;
     position: relative;
@@ -90,7 +88,7 @@
     line-height: 1.1;
     letter-spacing: -0.02em;
     margin-bottom: 24px;
-    color: #ffffff;
+    color: #0f172a;
 }
 
 .headlineDot {
@@ -100,7 +98,7 @@
 .leadText {
     font-size: 1.125rem;
     line-height: 1.7;
-    color: #a1a1aa;
+    color: #475569;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -113,12 +111,6 @@
     align-items: center;
 }
 
-.animationSection {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .servicesSection {
     width: 100%;
 }
@@ -126,74 +118,92 @@
 /* ─── Services Grid ─── */
 .servicesGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }
 
-
-
-/* ... existing serviceCard styles ... */
-
 .serviceCard {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    padding: 40px 30px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 40px 32px;
     position: relative;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 180px;
+    min-height: 250px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
 }
 
 .serviceCard:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     border-color: rgba(228, 51, 58, 0.3);
-    background: rgba(255, 255, 255, 0.04);
-    box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
 }
 
 .cardGlow {
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 100% 0%, rgba(228, 51, 58, 0.08), transparent 50%);
+    background: radial-gradient(circle at 100% 0%, rgba(228, 51, 58, 0.03), transparent 50%);
     opacity: 0;
     transition: opacity 0.5s ease;
     pointer-events: none;
-}
-
-.serviceCard:hover {
-    border-color: rgba(228, 51, 58, 0.3);
 }
 
 .serviceCard:hover .cardGlow {
     opacity: 1;
 }
 
+.iconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: #fff1f2;
+    color: #E4333A;
+    border-radius: 16px;
+    margin-bottom: 28px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.serviceCard:hover .iconWrapper {
+    background: #E4333A;
+    color: #ffffff;
+    transform: scale(1.1) rotate(5deg);
+}
+
 .cardNumber {
+    position: absolute;
+    top: 24px;
+    right: 32px;
     font-family: var(--font-montserrat);
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 800;
-    color: rgba(255, 255, 255, 0.04);
+    color: #f1f5f9;
     line-height: 1;
-    margin-bottom: 20px;
-    transition: color 0.4s ease;
+    margin-bottom: 0;
+    transition: all 0.4s ease;
+    z-index: 0;
 }
 
 .serviceCard:hover .cardNumber {
-    color: rgba(228, 51, 58, 0.15);
+    color: #ffe4e6;
+    transform: scale(1.05) translate(5px, -5px);
 }
 
 .cardTitle {
     font-family: var(--font-montserrat);
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1.35rem;
+    font-weight: 700;
     line-height: 1.4;
-    color: #f4f4f5;
+    color: #0f172a;
     position: relative;
     z-index: 2;
     margin-top: auto;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
 }
 
 .cardLine {
@@ -201,49 +211,26 @@
     bottom: 0;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 4px;
     background: #E4333A;
-    transition: width 0.4s ease;
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .serviceCard:hover .cardLine {
-    width: 40%;
-}
-
-.sectionLabel .labelLine,
-.headlineDot,
-.sectionLabel .labelText,
-.cardLine {
-    color: #E4333A;
-    background: #E4333A;
-}
-
-.sectionLabel .labelText {
-    background: none;
+    width: 100%;
 }
 
 /* ─── Responsive ─── */
-@media (max-width: 1400px) {
-    .animationSection {
-        max-width: 900px;
-    }
-}
-
 @media (max-width: 1200px) {
     .contentLayout {
         gap: 60px;
-    }
-
-    .animationSection {
-        max-width: 800px;
     }
 }
 
 @media (max-width: 992px) {
     .servicesGrid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
-
     .headerBlock {
         margin-bottom: 40px;
     }
@@ -253,12 +240,13 @@
     .container {
         padding: 0 20px;
     }
-
     .section {
         padding: 120px 0 80px;
     }
-
     .contentLayout {
         gap: 40px;
+    }
+    .cardNumber {
+        font-size: 3rem;
     }
 }
