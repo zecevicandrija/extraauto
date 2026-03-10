@@ -218,5 +218,22 @@
         "count": "Ukupno 4 kom"
       }
     }
+  },
+  "ExtraAgrarPage": {
+    "metadata": {
+      "title": "Extra Agrar | Extra Auto Transport",
+      "description": "Firma se bavi trgovinom žitarica, uljarica, komponenti za stočnu hranu i repromaterijala za poljoprivrednu proizvodnju.",
+      "keywords": "Extra Agrar, žitarice, poljoprivreda, Kula, otkup, stočna hrana"
+    },
+    "title": "Extra Agrar",
+    "description_1": "Ćerka firma Extra Agrar osnovana je početkom 2011. godine i za kratko vreme je postala pouzdan partner svojim kupcima i dobavljačima.",
+    "description_2": "Firma se bavi trgovinom žitarica, uljarica, komponenti za stočnu hranu i repromaterijala za poljoprivrednu proizvodnju.",
+    "description_3": "Extra Agrar raspolaže podnim skladištima u Kuli kapaciteta 15.000 t i na toj lokaciji vrši otkup poljoprivrednih kultura i ugovaranje poljoprivredne proizvodnje.",
+    "item_1": "Trgovina žitaricama",
+    "item_2": "Komponente za stočnu hranu",
+    "item_3": "Repromaterijal za poljoprivredu",
+    "item_4": "Podna skladišta u Kuli (15.000 t)",
+    "item_5": "Otkup poljoprivrednih kultura",
+    "item_6": "Ugovaranje poljoprivredne proizvodnje"
   }
 }

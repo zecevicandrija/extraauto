@@ -214,5 +214,22 @@
         "count": "Insgesamt 4 Stk."
       }
     }
+  },
+  "ExtraAgrarPage": {
+    "metadata": {
+      "title": "Extra Agrar | Extra Auto Transport",
+      "description": "Das Unternehmen handelt mit Getreide, Ölsaaten, Futtermittelkomponenten und Reproduktionsmaterialien für die landwirtschaftliche Produktion.",
+      "keywords": "Extra Agrar, Getreide, Landwirtschaft, Kula, Ankauf, Futtermittel"
+    },
+    "title": "Extra Agrar",
+    "description_1": "Das Tochterunternehmen Extra Agrar wurde Anfang 2011 gegründet und hat sich in kurzer Zeit zu einem zuverlässigen Partner für Kunden und Lieferanten entwickelt.",
+    "description_2": "Das Unternehmen handelt mit Getreide, Ölsaaten, Futtermittelkomponenten und Reproduktionsmaterialien für die landwirtschaftliche Produktion.",
+    "description_3": "Extra Agrar verfügt über Bodenlager in Kula mit einer Kapazität von 15.000 t und kauft an diesem Standort landwirtschaftliche Kulturen an und schließt Verträge über die landwirtschaftliche Produktion ab.",
+    "item_1": "Getreidehandel",
+    "item_2": "Futtermittelkomponenten",
+    "item_3": "Landwirtschaftliches Reproduktionsmaterial",
+    "item_4": "Bodenlager in Kula (15.000 t)",
+    "item_5": "Ankauf landwirtschaftlicher Kulturen",
+    "item_6": "Vertragsabschluss für landwirtschaftliche Prod."
   }
 }

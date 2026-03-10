@@ -134,11 +134,42 @@
    HEADLINE BLOCK
    ═════════════════════════════════════ */
 .headlineBlock {
-  display: grid;
-  grid-template-columns: 1.6fr 1fr;
-  gap: 80px;
-  align-items: end;
-  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  max-width: 55%;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.heroGraphicWrapper {
+  position: absolute;
+  right: 2%;
+  top: 1%;
+  width: 45%;
+  max-width: 650px;
+  z-index: 5;
+  opacity: 0;
+  animation: revealGraphic 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+  pointer-events: none;
+}
+
+.heroGraphic {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 5px rgba(228, 51, 58, 0.4)) drop-shadow(0 0 5px rgba(228, 51, 58, 0.3)) drop-shadow(0 0 5px rgba(228, 51, 58, 0.2));
+}
+
+@keyframes revealGraphic {
+  0% {
+    opacity: 0;
+    transform: translate(60px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
 
 .headline {
@@ -177,10 +208,11 @@
   color: #E4333A;
 }
 
-.headlineRight {
+.headlineContent {
   display: flex;
   flex-direction: column;
   gap: 36px;
+  margin-top: 36px;
   padding-bottom: 12px;
   opacity: 0;
   animation: reveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
@@ -264,6 +296,8 @@
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   opacity: 0;
   animation: reveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.7s forwards;
+  position: relative;
+  z-index: 10;
 }
 
 .serviceCard {
@@ -442,6 +476,18 @@
   }
 }
 
+@keyframes revealGraphicMobile {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ═════════════════════════════════════
    RESPONSIVE
    ═════════════════════════════════════ */
@@ -451,7 +497,7 @@
   }
 
   .headlineBlock {
-    gap: 48px;
+    max-width: 65%;
   }
 
   .services {
@@ -477,8 +523,20 @@
   }
 
   .headlineBlock {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .heroGraphicWrapper {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 80%;
+    max-width: 450px;
+    margin: 0 auto 60px auto;
+    opacity: 0;
+    display: block;
+    animation: revealGraphicMobile 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
   }
 
   .headline {
@@ -494,7 +552,7 @@
     margin-bottom: 48px;
   }
 
-  .headlineRight {
+  .headlineContent {
     max-width: 520px;
   }
 
@@ -535,7 +593,12 @@
   }
 
   .headlineBlock {
-    margin-bottom: 64px;
+    margin-bottom: 30px;
+  }
+
+  .heroGraphicWrapper {
+    width: 95%;
+    margin-bottom: 50px;
   }
 
   .services {

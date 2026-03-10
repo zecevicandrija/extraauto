@@ -42,7 +42,7 @@ const Hero = () => {
                         <span className={styles.line1}>{t('headline_1')}</span>
                         <span className={styles.line3}>{t('headline_2')}<span className={styles.dot}>.</span></span>
                     </h1>
-                    <div className={styles.headlineRight}>
+                    <div className={styles.headlineContent}>
                         <p className={styles.lead}>
                             {t('lead_text')}
                         </p>
@@ -54,6 +54,37 @@ const Hero = () => {
                             <Link href="/kontakt" className={styles.btnOutline}>{t('btn_contact')}</Link>
                         </div>
                     </div>
+                </div>
+
+                {/* ─── Hero Graphic (Right Side) ─── */}
+                <div className={styles.heroGraphicWrapper}>
+                    <svg viewBox="0 0 110.6 101.2" className={styles.heroGraphic} preserveAspectRatio="xMidYMax meet" style={{ overflow: 'visible' }}>
+                        <defs>
+                            <clipPath id="triangleClip">
+                                <polygon points="55.3,0 82.9,47.9 110.6,95.8 55.3,95.8 0,95.8 27.6,47.9" />
+                            </clipPath>
+                        </defs>
+                        <g clipPath="url(#triangleClip)">
+                            <foreignObject x="-10" y="0" width="130" height="110">
+                                <video
+                                    src="/Assets/video1.mp4"
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                />
+                            </foreignObject>
+                            <rect x="0" y="0" width="110.6" height="101.2" fill="rgba(8, 8, 8, 0.45)" />
+                            
+                            {/* ─── Paths (Road) inside the triangle ─── */}
+                            <path fill="#BC292E" d="M40.3,95.8C43.1,71.5,57.9,50,79.1,41.3l3.8,6.6l1,1.7c-14,10.7-20.6,28.3-21.1,46.2h-5.2H40.3z" opacity="0.9" />
+                            <path fill="#FFFFFF" d="M34.7,101.2c2.2-28.5,21-54.5,47-62.2l4.6,6.7C66.6,56.7,57.7,79.2,57.8,101L34.7,101.2z" />
+                            <path fill="none" stroke="#E4333A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="4,10" d="M46.6,97.1c1-14.8,10.7-41.8,34.1-52.9" />
+                        </g>
+                        {/* ─── Outline for the Triangle ─── */}
+                        <polygon points="55.3,0 82.9,47.9 110.6,95.8 55.3,95.8 0,95.8 27.6,47.9" fill="none" stroke="#FFFFFF" strokeWidth="0.6" strokeOpacity="0.8" />
+                    </svg>
                 </div>
 
                 {/* ─── Services Grid ─── */}

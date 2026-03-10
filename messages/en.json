@@ -218,5 +218,22 @@
         "count": "Total 4 pcs"
       }
     }
+  },
+  "ExtraAgrarPage": {
+    "metadata": {
+      "title": "Extra Agrar | Extra Auto Transport",
+      "description": "The company trades in cereals, oilseeds, animal feed components and reproductive materials for agricultural production.",
+      "keywords": "Extra Agrar, cereals, agriculture, Kula, purchase, animal feed"
+    },
+    "title": "Extra Agrar",
+    "description_1": "The subsidiary Extra Agrar was founded at the beginning of 2011 and in a short time became a reliable partner to its customers and suppliers.",
+    "description_2": "The company trades in cereals, oilseeds, animal feed components and reproductive materials for agricultural production.",
+    "description_3": "Extra Agrar has floor warehouses in Kula with a capacity of 15,000 t and at that location purchases agricultural crops and contracts agricultural production.",
+    "item_1": "Cereal Trading",
+    "item_2": "Animal Feed Components",
+    "item_3": "Agricultural Reproductive Material",
+    "item_4": "Floor Warehouses in Kula (15,000 t)",
+    "item_5": "Purchase of Agricultural Crops",
+    "item_6": "Contracting Agricultural Production"
   }
 }
