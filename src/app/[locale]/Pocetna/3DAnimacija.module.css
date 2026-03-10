@@ -1,0 +1,130 @@
+/* ═══════════════════════════════════════════════════
+   3D ANIMATION — Compact Version for Services Page
+   ═══════════════════════════════════════════════════ */
+
+/* ─── Spline Viewer Wrapper ─── */
+.splineWrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: reveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+}
+
+
+.splineContainer {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Gradient boundaries to melt the 3D scene edges seamlessly into the card */
+.splineOverlayTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, #09090b, transparent);
+    pointer-events: none;
+}
+
+.splineOverlayBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to top, #09090b, transparent);
+    pointer-events: none;
+}
+
+.splineOverlayLeft {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    background: linear-gradient(to right, #09090b, transparent);
+    pointer-events: none;
+}
+
+.splineOverlayRight {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    background: linear-gradient(to left, #09090b, transparent);
+    pointer-events: none;
+}
+
+/* Loader */
+.loaderContainer {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #09090b;
+    z-index: 10;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    border-top-color: #E4333A;
+    animation: spin 1s ease-in-out infinite;
+}
+
+/* ─── Keyframes ─── */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1200px) {
+    /* maintain aspect ratio */
+}
+
+@media (max-width: 992px) {
+    /* maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+    .splineWrapper {
+        border-radius: 16px;
+    }
+
+    .splineOverlayTop,
+    .splineOverlayBottom {
+        height: 60px;
+    }
+
+    .splineOverlayLeft,
+    .splineOverlayRight {
+        width: 60px;
+    }
+}

@@ -9,5 +9,214 @@
     "galerija": "Gallery",
     "kontakt": "Contact",
     "odaberite_jezik": "Select Language"
+  },
+  "Hero": {
+    "stat_label_1": "Working Units",
+    "stat_label_2": "Fleet Vehicles",
+    "stat_label_3": "Storage Capacity",
+    "headline_1": "Extra Auto",
+    "headline_2": "Transport",
+    "lead_text": "\"Extra Auto Transport\" possesses appropriate machinery and vehicles with which it successfully performs tasks in civil engineering and logistics — with a professional workforce ready for the most demanding projects.",
+    "btn_about": "About Company",
+    "btn_contact": "Contact",
+    "service_1_title": "Civil Engineering",
+    "service_1_desc": "We possess top-tier machinery and expert staff with whom we successfully perform all types of tasks in the field of civil engineering and road economy.",
+    "service_2_title": "Logistics",
+    "service_2_desc": "With 50 vehicles in our fleet and our own storage capacity of 20,000 t, we provide all types of services: domestic and international transport.",
+    "service_3_title": "Soil Stabilization",
+    "service_3_desc": "With the latest generation Wirtgen WR series machine, we successfully carry out operations in soil stabilization and cold recycling of roads.",
+    "service_4_title": "Asphalt & Aggregate",
+    "service_4_desc": "Production and installation of crushed stone aggregate and high-quality asphalt for every request in road infrastructure."
+  },
+  "About": {
+    "section_label": "About Us",
+    "headline_1": "Extra Auto",
+    "headline_2": "Transport",
+    "year_founded": "Founded in 2007",
+    "lead_text_1": "\"Extra Auto Transport\" is a domestic company founded in 2007. We possess modern machinery, our own service center, and a highly professional and quality workforce.",
+    "lead_text_2": "Companies within our group employ over 250 people.",
+    "lead_text_3": "Through quality work, respect for agreed deadlines, and business professionalism, \"Extra Auto Transport\" has quickly ranked among the leading companies in Vojvodina and Serbia for civil engineering, road economy, water management, and bridge construction.",
+    "stat_1_number": "200+",
+    "stat_1_label": "Working and Driving Units",
+    "stat_2_number": "Asphalt Base",
+    "stat_2_label": "Kula",
+    "stat_3_number": "Quarry",
+    "stat_3_label": "Ub, Čučuge",
+    "subsidiary_title": "Subsidiaries",
+    "extra_agrar_desc": "The subsidiary Extra Agrar was founded in early 2011 and quickly became a reliable partner to its customers and suppliers.",
+    "zgop_desc": "ZGOP operates within the Extra Auto Transport system and is in charge of the construction and overhaul of railways."
+  },
+  "HomeContact": {
+    "section_label": "Contact",
+    "headline": "Get in touch",
+    "lead_text": "Interested in cooperation or have questions about our services? Leave us a message and our team will reply as soon as possible.",
+    "company_name": "D.O.O. \"Extra Auto Transport\"",
+    "address_label": "Address",
+    "address_value": "Maršala Tita 56, 21460 Vrbas",
+    "phone_label": "Tel/Fax",
+    "phone_value": "+381 (0)25 720 701",
+    "email_label": "Email",
+    "email_value": "office@extraautotransport.com",
+    "all_contacts_btn": "All Contacts",
+    "form_name": "Full Name",
+    "form_email": "Email Address",
+    "form_phone": "Phone (optional)",
+    "form_message": "Message",
+    "form_submit": "Send Message"
+  },
+  "Animacija3D": {
+    "section_label": "Network & System",
+    "headline": "Infrastructure"
+  },
+  "Footer": {
+    "company_name": "D.O.O. \"Extra Auto Transport\"",
+    "company_desc": "Leader in Vojvodina and the region for civil engineering, road economy, domestic and international transport.",
+    "quick_links": "Quick Links",
+    "link_home": "Home",
+    "link_about": "About us",
+    "link_services": "Services",
+    "link_contact": "Contact",
+    "our_services": "Our Services",
+    "service_1": "Civil Engineering",
+    "service_2": "Logistics",
+    "service_3": "Soil Stabilization",
+    "service_4": "Asphalt & Aggregate",
+    "contact_info": "Contact Info",
+    "address_label": "Address",
+    "address_value": "Maršala Tita 56, 21460 Vrbas",
+    "phone_label": "Phone",
+    "phone_value": "+381 (0)25 720 701",
+    "email_label": "Email",
+    "email_value": "office@extraautotransport.com",
+    "copyright": "© {year} Extra Auto Transport. All rights reserved.",
+    "design_by": "Design and development: "
+  },
+  "ServicesPage": {
+    "metadata": {
+      "title": "Services | Extra Auto Transport",
+      "description": "\"Extra Auto Transport\" possesses appropriate machinery and vehicles with which it successfully performs numerous services in the field of civil engineering and logistics.",
+      "keywords": "services, civil engineering, transport, asphalt, recycling"
+    },
+    "title": "Our Services",
+    "description": "\"Extra Auto Transport\" possesses appropriate machinery and vehicles with which it successfully performs the following services:",
+    "item_1": "Civil engineering",
+    "item_2": "Production and installation of asphalt",
+    "item_3": "Production and installation of crushed stone aggregate",
+    "item_4": "Cement soil stabilization",
+    "item_5": "Cold recycling of roads",
+    "item_6": "Construction of access roads",
+    "item_7": "Clearing, cleaning and leveling of all types of terrain",
+    "item_8": "All types of excavation (earth, clay, ore...)",
+    "item_9": "Transport of all types of bulk and bagged goods",
+    "item_10": "Loading and unloading of bulk and palletized goods",
+    "item_11": "Storage of bulk and bagged goods"
+  },
+  "EquipmentPage": {
+    "metadata": {
+      "title": "Equipment | Extra Auto Transport",
+      "description": "The technical equipment of \"Extra Auto Transport\" is at an enviable level. The company owns equipment from renowned global manufacturers.",
+      "keywords": "equipment, loaders, excavators, trucks, machinery"
+    },
+    "title": "Our Equipment",
+    "description_1": "The technical equipment of \"Extra Auto Transport\" is at an enviable level. The company owns equipment and transport vehicles from renowned global manufacturers: Wirtgen, Hamm, New Holland, JCB, Mercedes, Scania, Komatsu, Ropa, etc.",
+    "description_2": "All equipment and transport vehicles are operated and regularly serviced by highly qualified licensed mechanics, so their technical correctness is constantly taken care of.",
+    "items": {
+      "item_1": {
+        "title": "Loaders",
+        "desc": "Komatsu, Liebherr, Daewoo,...",
+        "specs": "From 18t to 46t",
+        "count": "Total 20 pcs"
+      },
+      "item_2": {
+        "title": "Bulldozers",
+        "desc": "Catepilar, Hitachi, New Holland...",
+        "specs": "From 18t to 31t",
+        "count": "Total 10 pcs"
+      },
+      "item_3": {
+        "title": "Excavators",
+        "desc": "New Holland, Samsung, Hitachi.",
+        "specs": "From 16t to 45t",
+        "count": "Total 20 pcs"
+      },
+      "item_4": {
+        "title": "Rollers",
+        "desc": "Atlas, Hamm, Bomag",
+        "specs": "From 8t to 20t",
+        "count": "Total 5 pcs"
+      },
+      "item_5": {
+        "title": "Asphalt Base",
+        "desc": "",
+        "specs": "Capacity: 100 t/h",
+        "count": ""
+      },
+      "item_6": {
+        "title": "Combined Machine – JCB",
+        "desc": "",
+        "specs": "",
+        "count": "Total 4 pcs"
+      },
+      "item_7": {
+        "title": "Trucks",
+        "desc": "Man, Volvo, Scania",
+        "specs": "",
+        "count": "Total 70 pcs"
+      },
+      "item_8": {
+        "title": "Graders",
+        "desc": "New Holland",
+        "specs": "",
+        "count": "Total 2 pcs"
+      },
+      "item_9": {
+        "title": "Wirtgen WR 240",
+        "desc": "Machine for cement soil stabilization.",
+        "specs": "",
+        "count": ""
+      },
+      "item_10": {
+        "title": "Compactors",
+        "desc": "Unimog, Mercedes",
+        "specs": "",
+        "count": "Total 2 pcs"
+      },
+      "item_11": {
+        "title": "Ropa Tiger",
+        "desc": "Beet harvesting combine. Bunker 30t, Harvester at 45-50cm, Capacity up to 30 ha/day, Possibility of working in extremely difficult conditions caused by heavy rainfall. Option: variable header, integral and with leaf spreader",
+        "specs": "",
+        "count": "Total 4 pcs"
+      },
+      "item_12": {
+        "title": "Wirtgen WR 2000",
+        "desc": "Machine for cement soil stabilization.",
+        "specs": "",
+        "count": ""
+      },
+      "item_13": {
+        "title": "Ropa Euro Maus",
+        "desc": "The most modern combined sugar beet cleaner and loader, with the ability to work in all conditions. Cleaning and loading speed 30t/5min",
+        "specs": "",
+        "count": "Total 2 pcs"
+      },
+      "item_14": {
+        "title": "Delivery vehicles",
+        "desc": "Delivery vehicles for urban conditions.",
+        "specs": "From 1 to 5 euro pallets",
+        "count": ""
+      },
+      "item_15": {
+        "title": "LEICA ICON ICG60",
+        "desc": "3D system for machine automation",
+        "specs": "",
+        "count": ""
+      },
+      "item_16": {
+        "title": "Telehandler",
+        "desc": "It has the ability to combine attaching working devices, pallet truck, loading bucket, bale loading scissors, etc.",
+        "specs": "Arm length 7.5m to 13m.",
+        "count": "Total 4 pcs"
+      }
+    }
   }
 }

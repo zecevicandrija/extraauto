@@ -9,5 +9,214 @@
     "galerija": "Galerija",
     "kontakt": "Kontakt",
     "odaberite_jezik": "Odaberite jezik"
+  },
+  "Hero": {
+    "stat_label_1": "Radnih Jedinica",
+    "stat_label_2": "Vozila u Floti",
+    "stat_label_3": "Skladišnog Kapaciteta",
+    "headline_1": "Extra Auto",
+    "headline_2": "Transport",
+    "lead_text": "\"Extra Auto Transport\" poseduje odgovarajuću mehanizaciju i vozila kojima uspešno obavlja poslove u niskogradnji i logistici — sa stručnom radnom snagom spremnom za najzahtevnije projekte.",
+    "btn_about": "O Kompaniji",
+    "btn_contact": "Kontakt",
+    "service_1_title": "Niskogradnja",
+    "service_1_desc": "Posedujemo vrhunsku mehanizaciju i stručan kadar sa kojim uspešno obavljamo sve vrste poslova iz oblasti niskogradnje i putne privrede.",
+    "service_2_title": "Logistika",
+    "service_2_desc": "Sa 50 vozila u voznom parku i sopstvenim skladišnim kapacitetom od 20.000 t pružamo sve vrste usluga: domaći i internacionalan transport.",
+    "service_3_title": "Stabilizacija Tla",
+    "service_3_desc": "Sa mašinom najnovije generacije Wirtgen WR serije uspešno obavljamo operacije u stabilizaciji tla i hladnoj reciklaži puteva.",
+    "service_4_title": "Asfalt & Agregat",
+    "service_4_desc": "Proizvodnja i ugradnja drobljenog kamenog agregata i asfalta visokog kvaliteta za svaki zahtev u putnoj infrastrukturi."
+  },
+  "About": {
+    "section_label": "O Nama",
+    "headline_1": "Extra Auto",
+    "headline_2": "Transport",
+    "year_founded": "Osnovano 2007. godine",
+    "lead_text_1": "„Extra Auto Transport\" je domaća kompanija koja je osnovana 2007. godine. Raspolažemo savremenom mehanizacijom, sopstvenim servisom, visokostručnom i kvalitetnom radnom snagom.",
+    "lead_text_2": "Firme iz naše grupacije zapošljavaju više od 250 ljudi.",
+    "lead_text_3": "Kvalitetnim radom, poštovanjem ugovorenih rokova i svojom poslovnošću, „Extra Auto Transport\" se za kratko vreme svrstava u vodeće firme u Vojvodini i Srbiji kada su u pitanju radovi niskogradnje, putne privrede, vodoprivrede i mostogradnje.",
+    "stat_1_number": "200+",
+    "stat_1_label": "Radnih i Voznih Jedinica",
+    "stat_2_number": "Asfaltna Baza",
+    "stat_2_label": "Kula",
+    "stat_3_number": "Kamenolom",
+    "stat_3_label": "Ub, Čučuge",
+    "subsidiary_title": "Ćerke Firme",
+    "extra_agrar_desc": "Ćerka firma Extra Agrar osnovana je početkom 2011. godine i za kratko vreme je postala pouzdan partner svojim kupcima i dobavljačima.",
+    "zgop_desc": "ZGOP posluje u okviru Extra Auto Transport sistema i zadužena je za izgradnju i remont pruga."
+  },
+  "HomeContact": {
+    "section_label": "Kontakt",
+    "headline": "Stupite u kontakt",
+    "lead_text": "Zainteresovani ste za saradnju ili imate pitanja o našim uslugama? Ostavite nam poruku i naš tim će vam odgovoriti u najkraćem roku.",
+    "company_name": "D.O.O. \"Extra Auto Transport\"",
+    "address_label": "Adresa",
+    "address_value": "Maršala Tita 56, 21460 Vrbas",
+    "phone_label": "Tel/Fax",
+    "phone_value": "+381 (0)25 720 701",
+    "email_label": "Email",
+    "email_value": "office@extraautotransport.com",
+    "all_contacts_btn": "Svi Kontakti",
+    "form_name": "Ime i Prezime",
+    "form_email": "Email adresa",
+    "form_phone": "Telefon (opciono)",
+    "form_message": "Poruka",
+    "form_submit": "Pošalji Poruku"
+  },
+  "Animacija3D": {
+    "section_label": "Mreža & Sistem",
+    "headline": "Infrastruktura"
+  },
+  "Footer": {
+    "company_name": "D.O.O. \"Extra Auto Transport\"",
+    "company_desc": "Lider u Vojvodini i regiji za poslove niskogradnje, putne privrede, domaćeg i međunarodnog transporta.",
+    "quick_links": "Brzi Linkovi",
+    "link_home": "Početna",
+    "link_about": "O nama",
+    "link_services": "Usluge",
+    "link_contact": "Kontakt",
+    "our_services": "Naše Usluge",
+    "service_1": "Niskogradnja",
+    "service_2": "Logistika",
+    "service_3": "Stabilizacija Tla",
+    "service_4": "Asfalt & Agregat",
+    "contact_info": "Kontakt Info",
+    "address_label": "Adresa",
+    "address_value": "Maršala Tita 56, 21460 Vrbas",
+    "phone_label": "Telefon",
+    "phone_value": "+381 (0)25 720 701",
+    "email_label": "Email",
+    "email_value": "office@extraautotransport.com",
+    "copyright": "© {year} Extra Auto Transport. Sva prava zadržana.",
+    "design_by": "Dizajn i razvoj: "
+  },
+  "ServicesPage": {
+    "metadata": {
+      "title": "Usluge | Extra Auto Transport",
+      "description": "„Extra Auto Transport“ poseduje odgovarajuću mehanizaciju i vozila kojima uspešno obavlja brojne usluge u oblasti niskogradnje i logistike.",
+      "keywords": "usluge, niskogradnja, transport, asfalt, reciklaža"
+    },
+    "title": "Naše Usluge",
+    "description": "„Extra Auto Transport“ poseduje odgovarajuću mehanizaciju i vozila kojima uspešno obavlja sledeće usluge:",
+    "item_1": "Niskogradnja",
+    "item_2": "Proizvodnja i ugradnja asfalta",
+    "item_3": "Proizvodnja i ugradnja drobljenog kamenog agregata",
+    "item_4": "Cementna stabilizacija tla",
+    "item_5": "Hladna reciklaža puteva",
+    "item_6": "Izgradnja pristupnih puteva",
+    "item_7": "Krčenje, čišćenje i prizmiranje svih vrsta terena",
+    "item_8": "Sve vrste iskopa (zemlja, glina, ruda…)",
+    "item_9": "Prevoz svih vrsta rinfuzne i džakirane robe",
+    "item_10": "Utovar i istovar rinfuzne i paletne robe",
+    "item_11": "Skladištenje rinfuzne i džakirane robe"
+  },
+  "EquipmentPage": {
+    "metadata": {
+      "title": "Oprema | Extra Auto Transport",
+      "description": "Tehnička opremljenost „Extra Auto Transporta“ je na zavidnom nivou. Firma poseduje opremu poznatih svetskih proizvođača.",
+      "keywords": "oprema, utovarivači, bageri, kamioni, mehanizacija"
+    },
+    "title": "Naša Oprema",
+    "description_1": "Tehnička opremljenost „Extra Auto Transporta“ je na zavidnom nivou. Firma poseduje opremu i transportna sredstva poznatih svetskih proizvođača: Wirtgen, Hamm, New Holland, JCB, Mercedes, Scania, Komatsu, Ropa i dr.",
+    "description_2": "Svom opremom i transportnim sredstvima rukuju i redovno ih servisiraju visokokvalifikovani licencirani majstori, tako da se neprestano vodi računa o njihovoj tehničkoj ispravnosti.",
+    "items": {
+      "item_1": {
+        "title": "Utovarivači",
+        "desc": "Komatsu, Liebherr, Daewoo,...",
+        "specs": "Od 18t do 46t",
+        "count": "Ukupno 20 kom"
+      },
+      "item_2": {
+        "title": "Buldožeri",
+        "desc": "Catepilar, Hitachi, New Holland...",
+        "specs": "Od 18t do 31t",
+        "count": "Ukupno 10 kom"
+      },
+      "item_3": {
+        "title": "Bageri",
+        "desc": "New Holland, Samsung, Hitachi.",
+        "specs": "Od 16t do 45t",
+        "count": "Ukupno 20 kom"
+      },
+      "item_4": {
+        "title": "Valjci",
+        "desc": "Atlas, Hamm, Bomag",
+        "specs": "Od 8t do 20t",
+        "count": "Ukupno 5 kom"
+      },
+      "item_5": {
+        "title": "Asfaltna baza",
+        "desc": "",
+        "specs": "Kapacitet: 100 t/h",
+        "count": ""
+      },
+      "item_6": {
+        "title": "Kombinovana mašina – JCB",
+        "desc": "",
+        "specs": "",
+        "count": "Ukupno 4 kom"
+      },
+      "item_7": {
+        "title": "Kamioni",
+        "desc": "Man, Volvo, Scania",
+        "specs": "",
+        "count": "Ukupno 70 kom"
+      },
+      "item_8": {
+        "title": "Grejderi",
+        "desc": "New Holland",
+        "specs": "",
+        "count": "Ukupno 2 kom"
+      },
+      "item_9": {
+        "title": "Wirtgen WR 240",
+        "desc": "Mašina za cementnu stabilizaciju tla.",
+        "specs": "",
+        "count": ""
+      },
+      "item_10": {
+        "title": "Kompaktori",
+        "desc": "Unimog, Mercedes",
+        "specs": "",
+        "count": "Ukupno 2 kom"
+      },
+      "item_11": {
+        "title": "Ropa Tiger",
+        "desc": "Kombajn za vađenje repe. Bunker 30t, Vadilica na 45-50cm, Kapacitet do 30 ha/dan, Mogućnost rada u izuzetno teškim uslovima, prouzrokovanim obilnim kišnim padavinama. Opcija: varijabilni heder, integralni i sa rasturivačem lista",
+        "specs": "",
+        "count": "Ukupno 4 kom"
+      },
+      "item_12": {
+        "title": "Wirtgen WR 2000",
+        "desc": "Mašina za cementnu stabilizaciju tla.",
+        "specs": "",
+        "count": ""
+      },
+      "item_13": {
+        "title": "Ropa Euro Maus",
+        "desc": "Najsavremeniji kombinovani prečistač i utovarivač šećerne repe, sa mogućnošću rada u svim uslovima. Brzina čišćenja i utovara 30t/5min",
+        "specs": "",
+        "count": "Ukupno 2 kom"
+      },
+      "item_14": {
+        "title": "Dostavna vozila",
+        "desc": "Dostavna vozila za gradske uslove.",
+        "specs": "od 1 do 5 euro paleta",
+        "count": ""
+      },
+      "item_15": {
+        "title": "LEICA ICON ICG60",
+        "desc": "3D sistem za automatizaciju masina",
+        "specs": "",
+        "count": ""
+      },
+      "item_16": {
+        "title": "Telehendler",
+        "desc": "Poseduje mogućnost kombinovanja priključnih radnih uređaja, paletar, utovarna kašika, makaze za utovar bala, i dr.",
+        "specs": "Dužina ruke 7.5m do 13 m.",
+        "count": "Ukupno 4 kom"
+      }
+    }
   }
 }

@@ -1,7 +1,9 @@
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
 import { Montserrat, Manrope } from "next/font/google";
 import Navbar from "./NavFooter/Navbar";
 import Footer from "./NavFooter/Footer";
-import "./globals.css";
+import "../globals.css";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -13,13 +15,18 @@ const manrope = Manrope({
   subsets: ["latin"],
 });
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children, params }) {
+  const { locale } = await params;
+  const messages = await getMessages();
+
   return (
-    <html lang="sr">
+    <html lang={locale}>
       <body className={`${manrope.variable} ${montserrat.variable}`}>
-        <Navbar />
-        {children}
-        <Footer />
+        <NextIntlClientProvider messages={messages}>
+          <Navbar />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

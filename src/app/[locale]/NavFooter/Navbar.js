@@ -2,12 +2,17 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslations, useLocale } from 'next-intl';
+import { Link, usePathname, useRouter } from '../../../i18n/routing';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const t = useTranslations('Navbar');
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,13 +33,13 @@ const Navbar = () => {
   }, [mobileMenuOpen]);
 
   const navLinks = [
-    { name: 'Usluge', href: '/usluge' },
-    { name: 'Oprema', href: '/oprema' },
-    { name: 'Extra Agrar', href: '/extra-agrar' },
-    { name: 'Reference', href: '/reference' },
-    { name: 'Politika Kvaliteta', href: '/politika-kvaliteta' },
-    { name: 'Sertifikati', href: '/sertifikati' },
-    { name: 'Galerija', href: '/galerija' },
+    { name: t('usluge'), href: '/usluge' },
+    { name: t('oprema'), href: '/oprema' },
+    { name: t('extra_agrar'), href: '/extra-agrar' },
+    { name: t('reference'), href: '/reference' },
+    { name: t('politika_kvaliteta'), href: '/politika-kvaliteta' },
+    { name: t('sertifikati'), href: '/sertifikati' },
+    { name: t('galerija'), href: '/galerija' },
   ];
 
   return (
@@ -57,9 +62,9 @@ const Navbar = () => {
               </div>
               <div className={styles.utilityRight}>
                 <div className={styles.langSwitcher}>
-                  <button className={`${styles.langBtn} ${styles.langActive}`}>SR</button>
-                  <button className={styles.langBtn}>EN</button>
-                  <button className={styles.langBtn}>DE</button>
+                  <button onClick={() => router.replace(pathname, {locale: 'sr'})} className={`${styles.langBtn} ${locale === 'sr' ? styles.langActive : ''}`}>SR</button>
+                  <button onClick={() => router.replace(pathname, {locale: 'en'})} className={`${styles.langBtn} ${locale === 'en' ? styles.langActive : ''}`}>EN</button>
+                  <button onClick={() => router.replace(pathname, {locale: 'de'})} className={`${styles.langBtn} ${locale === 'de' ? styles.langActive : ''}`}>DE</button>
                 </div>
               </div>
             </div>
@@ -99,7 +104,7 @@ const Navbar = () => {
 
               {/* CTA + Hamburger */}
               <div className={styles.navActions}>
-                <Link href="/kontakt" className={styles.ctaBtn}>Kontakt</Link>
+                <Link href="/kontakt" className={styles.ctaBtn}>{t('kontakt')}</Link>
                 <button
                   className={styles.hamburger}
                   onClick={() => setMobileMenuOpen(true)}

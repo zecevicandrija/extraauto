@@ -1,0 +1,264 @@
+.section {
+    position: relative;
+    padding: 160px 0 100px;
+    min-height: 100vh;
+    background-color: #09090b;
+    color: #f4f4f5;
+    overflow: hidden;
+}
+
+.bgLayer {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.bgGrid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.5;
+}
+
+.bgOrb {
+    position: absolute;
+    top: -10%;
+    right: -5%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(228, 51, 58, 0.1) 0%, transparent 60%);
+    border-radius: 50%;
+    filter: blur(80px);
+}
+
+.bgOrb2 {
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(228, 51, 58, 0.08) 0%, transparent 60%);
+    border-radius: 50%;
+    filter: blur(90px);
+}
+
+
+.container {
+    max-width: 1840px;
+    margin: 0 auto;
+    padding: 0 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.headerBlock {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.sectionLabel {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.labelLine {
+    width: 32px;
+    height: 1px;
+    background: #E4333A;
+}
+
+.labelText {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #E4333A;
+    font-family: var(--font-montserrat);
+}
+
+.headline {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-family: var(--font-montserrat);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+    color: #ffffff;
+}
+
+.headlineDot {
+    color: #E4333A;
+}
+
+.leadText {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #a1a1aa;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ─── Content Layout ─── */
+.contentLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+}
+
+.animationSection {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.servicesSection {
+    width: 100%;
+}
+
+/* ─── Services Grid ─── */
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+
+
+/* ... existing serviceCard styles ... */
+
+.serviceCard {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 40px 30px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+}
+
+.serviceCard:hover {
+    transform: translateY(-5px);
+    border-color: rgba(228, 51, 58, 0.3);
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.5);
+}
+
+.cardGlow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 100% 0%, rgba(228, 51, 58, 0.08), transparent 50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.serviceCard:hover {
+    border-color: rgba(228, 51, 58, 0.3);
+}
+
+.serviceCard:hover .cardGlow {
+    opacity: 1;
+}
+
+.cardNumber {
+    font-family: var(--font-montserrat);
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.04);
+    line-height: 1;
+    margin-bottom: 20px;
+    transition: color 0.4s ease;
+}
+
+.serviceCard:hover .cardNumber {
+    color: rgba(228, 51, 58, 0.15);
+}
+
+.cardTitle {
+    font-family: var(--font-montserrat);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #f4f4f5;
+    position: relative;
+    z-index: 2;
+    margin-top: auto;
+}
+
+.cardLine {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #E4333A;
+    transition: width 0.4s ease;
+}
+
+.serviceCard:hover .cardLine {
+    width: 40%;
+}
+
+.sectionLabel .labelLine,
+.headlineDot,
+.sectionLabel .labelText,
+.cardLine {
+    color: #E4333A;
+    background: #E4333A;
+}
+
+.sectionLabel .labelText {
+    background: none;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1400px) {
+    .animationSection {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contentLayout {
+        gap: 60px;
+    }
+
+    .animationSection {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 992px) {
+    .servicesGrid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .headerBlock {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .section {
+        padding: 120px 0 80px;
+    }
+
+    .contentLayout {
+        gap: 40px;
+    }
+}

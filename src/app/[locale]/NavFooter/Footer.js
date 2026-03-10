@@ -1,8 +1,10 @@
 import React from 'react';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '../../../i18n/routing';
 import styles from './Footer.module.css';
 
 const Footer = () => {
+  const t = useTranslations('Footer');
   const currentYear = new Date().getFullYear();
 
   return (
@@ -22,53 +24,53 @@ const Footer = () => {
             <Link href="/">
               <img src="/Assets/logo.svg" alt="Extra Auto Transport Logo" className={styles.logo} />
             </Link>
-            <h3 className={styles.companyName}>D.O.O. "Extra Auto Transport"</h3>
+            <h3 className={styles.companyName}>{t('company_name')}</h3>
             <p className={styles.companyDesc}>
-              Lider u Vojvodini i regiji za poslove niskogradnje, putne privrede, domaćeg i međunarodnog transporta.
+              {t('company_desc')}
             </p>
           </div>
 
           {/* Column 2: Quick Links */}
           <div className={styles.linkCol}>
-            <h4 className={styles.colHeading}>Brzi Linkovi</h4>
+            <h4 className={styles.colHeading}>{t('quick_links')}</h4>
             <ul className={styles.linkList}>
               <li className={styles.linkItem}>
-                <Link href="/" className={styles.footerLink}>Početna</Link>
+                <Link href="/" className={styles.footerLink}>{t('link_home')}</Link>
               </li>
               <li className={styles.linkItem}>
-                <Link href="/o-nama" className={styles.footerLink}>O nama</Link>
+                <Link href="/o-nama" className={styles.footerLink}>{t('link_about')}</Link>
               </li>
               <li className={styles.linkItem}>
-                <Link href="/usluge" className={styles.footerLink}>Usluge</Link>
+                <Link href="/usluge" className={styles.footerLink}>{t('link_services')}</Link>
               </li>
               <li className={styles.linkItem}>
-                <Link href="/kontakt" className={styles.footerLink}>Kontakt</Link>
+                <Link href="/kontakt" className={styles.footerLink}>{t('link_contact')}</Link>
               </li>
             </ul>
           </div>
 
           {/* Column 3: Services */}
           <div className={styles.linkCol}>
-            <h4 className={styles.colHeading}>Naše Usluge</h4>
+            <h4 className={styles.colHeading}>{t('our_services')}</h4>
             <ul className={styles.linkList}>
               <li className={styles.linkItem}>
-                <Link href="/usluge#niskogradnja" className={styles.footerLink}>Niskogradnja</Link>
+                <Link href="/usluge#niskogradnja" className={styles.footerLink}>{t('service_1')}</Link>
               </li>
               <li className={styles.linkItem}>
-                <Link href="/usluge#logistika" className={styles.footerLink}>Logistika</Link>
+                <Link href="/usluge#logistika" className={styles.footerLink}>{t('service_2')}</Link>
               </li>
               <li className={styles.linkItem}>
-                <Link href="/usluge#stabilizacija" className={styles.footerLink}>Stabilizacija Tla</Link>
+                <Link href="/usluge#stabilizacija" className={styles.footerLink}>{t('service_3')}</Link>
               </li>
               <li className={styles.linkItem}>
-                <Link href="/usluge#asfalt" className={styles.footerLink}>Asfalt & Agregat</Link>
+                <Link href="/usluge#asfalt" className={styles.footerLink}>{t('service_4')}</Link>
               </li>
             </ul>
           </div>
 
           {/* Column 4: Contact */}
           <div className={styles.contactCol}>
-            <h4 className={styles.colHeading}>Kontakt Info</h4>
+            <h4 className={styles.colHeading}>{t('contact_info')}</h4>
             <div className={styles.contactList}>
               <div className={styles.contactItem}>
                 <div className={styles.contactIcon}>
@@ -78,8 +80,8 @@ const Footer = () => {
                   </svg>
                 </div>
                 <div className={styles.contactText}>
-                  <span className={styles.cLabel}>Adresa</span>
-                  <span className={styles.cValue}>Maršala Tita 56, 21460 Vrbas</span>
+                  <span className={styles.cLabel}>{t('address_label')}</span>
+                  <span className={styles.cValue}>{t('address_value')}</span>
                 </div>
               </div>
               
@@ -90,8 +92,8 @@ const Footer = () => {
                   </svg>
                 </div>
                 <div className={styles.contactText}>
-                  <span className={styles.cLabel}>Telefon</span>
-                  <span className={styles.cValue}>+381 (0)25 720 701</span>
+                  <span className={styles.cLabel}>{t('phone_label')}</span>
+                  <span className={styles.cValue}>{t('phone_value')}</span>
                 </div>
               </div>
 
@@ -103,8 +105,8 @@ const Footer = () => {
                   </svg>
                 </div>
                 <div className={styles.contactText}>
-                  <span className={styles.cLabel}>Email</span>
-                  <span className={styles.cValue}>office@extraautotransport.com</span>
+                  <span className={styles.cLabel}>{t('email_label')}</span>
+                  <span className={styles.cValue}>{t('email_value')}</span>
                 </div>
               </div>
             </div>
@@ -114,10 +116,10 @@ const Footer = () => {
         {/* ─── Bottom Bar (Copyright & Credits) ─── */}
         <div className={styles.bottomBar}>
           <div className={styles.copyright}>
-            © {currentYear} Extra Auto Transport. Sva prava zadržana.
+            {t('copyright', { year: currentYear })}
           </div>
           <div className={styles.creditBlock}>
-            Dizajn i razvoj:{' '}
+            {t('design_by')}{' '}
             <a 
               href="https://zecevicdev.com" 
               target="_blank" 

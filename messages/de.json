@@ -9,5 +9,210 @@
     "galerija": "Galerie",
     "kontakt": "Kontakt",
     "odaberite_jezik": "Sprache wählen"
+  },
+  "Hero": {
+    "stat_label_1": "Arbeitseinheiten",
+    "stat_label_2": "Fahrzeuge im Fuhrpark",
+    "stat_label_3": "Lagerkapazität",
+    "headline_1": "Extra Auto",
+    "headline_2": "Transport",
+    "lead_text": "\"Extra Auto Transport\" verfügt über die entsprechenden Maschinen und Fahrzeuge, mit denen es Aufgaben im Tiefbau und in der Logistik erfolgreich ausführt — mit professionellen Arbeitskräften, die für die anspruchsvollsten Projekte bereit sind.",
+    "btn_about": "Über das Unternehmen",
+    "btn_contact": "Kontakt",
+    "service_1_title": "Tiefbau",
+    "service_1_desc": "Wir verfügen über erstklassige Maschinen und qualifiziertes Personal, mit dem wir alle Arten von Arbeiten im Tiefbau und Straßenbau erfolgreich ausführen.",
+    "service_2_title": "Logistik",
+    "service_2_desc": "Mit 50 Fahrzeugen in unserem Fuhrpark und einer eigenen Lagerkapazität von 20.000 t bieten wir alle Arten von Dienstleistungen an: nationaler und internationaler Transport.",
+    "service_3_title": "Bodenstabilisierung",
+    "service_3_desc": "Mit der Maschine der neuesten Generation der Wirtgen WR-Serie führen wir erfolgreich Arbeiten zur Bodenstabilisierung und Kaltrecycling von Straßen durch.",
+    "service_4_title": "Asphalt & Zuschlagstoff",
+    "service_4_desc": "Herstellung und Einbau von gebrochenem Gesteinskörnung und hochwertigem Asphalt für alle Anforderungen der Straßeninfrastruktur."
+  },
+  "About": {
+    "section_label": "Über Uns",
+    "headline_1": "Extra Auto",
+    "headline_2": "Transport",
+    "year_founded": "Gegründet im Jahr 2007",
+    "lead_text_1": "„Extra Auto Transport“ ist ein inländisches Unternehmen, das 2007 gegründet wurde. Wir verfügen über moderne Maschinen, ein eigenes Servicecenter sowie hochqualifizierte und professionelle Arbeitskräfte.",
+    "lead_text_2": "Die Unternehmen unserer Gruppe beschäftigen mehr als 250 Mitarbeiter.",
+    "lead_text_3": "Durch Qualitätsarbeit, Einhaltung vereinbarter Fristen und Professionalität hat sich „Extra Auto Transport“ in kurzer Zeit in die Liste der führenden Unternehmen in der Vojvodina und in Serbien in den Bereichen Tiefbau, Straßenbau, Wasserbau und Brückenbau eingereiht.",
+    "stat_1_number": "200+",
+    "stat_1_label": "Arbeits- und Fahreinheiten",
+    "stat_2_number": "Asphaltmischanlage",
+    "stat_2_label": "Kula",
+    "stat_3_number": "Steinbruch",
+    "stat_3_label": "Ub, Čučuge",
+    "subsidiary_title": "Tochtergesellschaften",
+    "extra_agrar_desc": "Das Tochterunternehmen Extra Agrar wurde Anfang 2011 gegründet und hat sich in kurzer Zeit zu einem zuverlässigen Partner seiner Kunden und Lieferanten entwickelt.",
+    "zgop_desc": "ZGOP ist Teil des Extra Auto Transport Systems und zuständig für den Bau und die Überholung von Eisenbahnen."
+  },
+  "HomeContact": {
+    "section_label": "Kontakt",
+    "headline": "Kontakt aufnehmen",
+    "lead_text": "Haben Sie Interesse an einer Zusammenarbeit oder Fragen zu unseren Dienstleistungen? Hinterlassen Sie uns eine Nachricht und unser Team wird Ihnen so schnell wie möglich antworten.",
+    "company_name": "D.O.O. \"Extra Auto Transport\"",
+    "address_label": "Adresse",
+    "address_value": "Maršala Tita 56, 21460 Vrbas",
+    "phone_label": "Tel/Fax",
+    "phone_value": "+381 (0)25 720 701",
+    "email_label": "E-Mail",
+    "email_value": "office@extraautotransport.com",
+    "all_contacts_btn": "Alle Kontakte",
+    "form_name": "Vor- und Nachname",
+    "form_email": "E-Mail-Adresse",
+    "form_phone": "Telefon (optional)",
+    "form_message": "Nachricht",
+    "form_submit": "Nachricht senden"
+  },
+  "Footer": {
+    "company_name": "D.O.O. \"Extra Auto Transport\"",
+    "company_desc": "Führendes Unternehmen in der Vojvodina und in der Region für Tiefbau, Straßenbau, nationalen und internationalen Transport.",
+    "quick_links": "Schnelllinks",
+    "link_home": "Startseite",
+    "link_about": "Über uns",
+    "link_services": "Dienstleistungen",
+    "link_contact": "Kontakt",
+    "our_services": "Unsere Dienstleistungen",
+    "service_1": "Tiefbau",
+    "service_2": "Logistik",
+    "service_3": "Bodenstabilisierung",
+    "service_4": "Asphalt & Zuschlagstoff",
+    "contact_info": "Kontakt Info",
+    "address_label": "Adresse",
+    "address_value": "Maršala Tita 56, 21460 Vrbas",
+    "phone_label": "Telefon",
+    "phone_value": "+381 (0)25 720 701",
+    "email_label": "E-Mail",
+    "email_value": "office@extraautotransport.com",
+    "copyright": "© {year} Extra Auto Transport. Alle Rechte vorbehalten.",
+    "design_by": "Design und Entwicklung: "
+  },
+  "ServicesPage": {
+    "metadata": {
+      "title": "Dienstleistungen | Extra Auto Transport",
+      "description": "\"Extra Auto Transport\" verfügt über die entsprechenden Maschinen und Fahrzeuge, mit denen es zahlreiche Dienstleistungen in den Bereichen Tiefbau und Logistik erfolgreich erbringt.",
+      "keywords": "Dienstleistungen, Tiefbau, Transport, Asphalt, Recycling"
+    },
+    "title": "Unsere Dienstleistungen",
+    "description": "\"Extra Auto Transport\" verfügt über die entsprechenden Maschinen und Fahrzeuge, mit denen es die folgenden Dienstleistungen erfolgreich erbringt:",
+    "item_1": "Tiefbau",
+    "item_2": "Herstellung und Einbau von Asphalt",
+    "item_3": "Herstellung und Einbau von gebrochenem Gesteinskörnung",
+    "item_4": "Zementbodenstabilisierung",
+    "item_5": "Kaltrecycling von Straßen",
+    "item_6": "Bau von Zufahrtsstraßen",
+    "item_7": "Räumung, Reinigung und Planierung aller Arten von Gelände",
+    "item_8": "Alle Arten von Aushub (Erde, Ton, Erz...)",
+    "item_9": "Transport aller Arten von Schütt- und Sackgütern",
+    "item_10": "Be- und Entladen von Schütt- und Palettengütern",
+    "item_11": "Lagerung von Schütt- und Sackgütern"
+  },
+  "EquipmentPage": {
+    "metadata": {
+      "title": "Ausrüstung | Extra Auto Transport",
+      "description": "Die technische Ausstattung von „Extra Auto Transport“ ist auf einem beneidenswerten Niveau. Das Unternehmen verfügt über Ausrüstung namhafter globaler Hersteller.",
+      "keywords": "Ausrüstung, Lader, Bagger, LKWs, Maschinen"
+    },
+    "title": "Unsere Ausrüstung",
+    "description_1": "Die technische Ausstattung von „Extra Auto Transport“ ist auf einem beneidenswerten Niveau. Das Unternehmen besitzt Ausrüstung und Transportfahrzeuge von namhaften globalen Herstellern: Wirtgen, Hamm, New Holland, JCB, Mercedes, Scania, Komatsu, Ropa etc.",
+    "description_2": "Alle Geräte und Transportfahrzeuge werden von hochqualifizierten, lizenzierten Mechanikern bedient und regelmäßig gewartet, sodass ständig auf ihre technische Fehlerfreiheit geachtet wird.",
+    "items": {
+      "item_1": {
+        "title": "Radlader",
+        "desc": "Komatsu, Liebherr, Daewoo,...",
+        "specs": "Von 18t bis 46t",
+        "count": "Insgesamt 20 Stk."
+      },
+      "item_2": {
+        "title": "Planierraupen",
+        "desc": "Catepillar, Hitachi, New Holland...",
+        "specs": "Von 18t bis 31t",
+        "count": "Insgesamt 10 Stk."
+      },
+      "item_3": {
+        "title": "Bagger",
+        "desc": "New Holland, Samsung, Hitachi.",
+        "specs": "Von 16t bis 45t",
+        "count": "Insgesamt 20 Stk."
+      },
+      "item_4": {
+        "title": "Walzen",
+        "desc": "Atlas, Hamm, Bomag",
+        "specs": "Von 8t bis 20t",
+        "count": "Insgesamt 5 Stk."
+      },
+      "item_5": {
+        "title": "Asphaltmischanlage",
+        "desc": "",
+        "specs": "Kapazität: 100 t/h",
+        "count": ""
+      },
+      "item_6": {
+        "title": "Kombinierte Maschine – JCB",
+        "desc": "",
+        "specs": "",
+        "count": "Insgesamt 4 Stk."
+      },
+      "item_7": {
+        "title": "Lastkraftwagen",
+        "desc": "Man, Volvo, Scania",
+        "specs": "",
+        "count": "Insgesamt 70 Stk."
+      },
+      "item_8": {
+        "title": "Grader",
+        "desc": "New Holland",
+        "specs": "",
+        "count": "Insgesamt 2 Stk."
+      },
+      "item_9": {
+        "title": "Wirtgen WR 240",
+        "desc": "Maschine zur Zementbodenstabilisierung.",
+        "specs": "",
+        "count": ""
+      },
+      "item_10": {
+        "title": "Kompaktoren",
+        "desc": "Unimog, Mercedes",
+        "specs": "",
+        "count": "Insgesamt 2 Stk."
+      },
+      "item_11": {
+        "title": "Ropa Tiger",
+        "desc": "Rübenernter. Bunker 30t, Roder auf 45-50cm, Kapazität bis zu 30 ha/Tag, Möglichkeit des Arbeitens unter extrem schwierigen Bedingungen durch starke Regenfälle. Option: variables Schneidwerk, integral und mit Blattstreuer",
+        "specs": "",
+        "count": "Insgesamt 4 Stk."
+      },
+      "item_12": {
+        "title": "Wirtgen WR 2000",
+        "desc": "Maschine zur Zementbodenstabilisierung.",
+        "specs": "",
+        "count": ""
+      },
+      "item_13": {
+        "title": "Ropa Euro Maus",
+        "desc": "Modernster kombinierter Zuckerrübenreiniger und -lader mit der Möglichkeit, unter allen Bedingungen zu arbeiten. Reinigungs- und Ladegeschwindigkeit 30t/5min",
+        "specs": "",
+        "count": "Insgesamt 2 Stk."
+      },
+      "item_14": {
+        "title": "Lieferfahrzeuge",
+        "desc": "Lieferfahrzeuge für städtische Bedingungen.",
+        "specs": "Von 1 bis 5 Europaletten",
+        "count": ""
+      },
+      "item_15": {
+        "title": "LEICA ICON ICG60",
+        "desc": "3D-System zur Maschinenautomatisierung",
+        "specs": "",
+        "count": ""
+      },
+      "item_16": {
+        "title": "Teleskoplader",
+        "desc": "Möglichkeit der Kombination von Anbaugeräten: Hubwagen, Ladeschaufel, Ballenladeschere usw.",
+        "specs": "Armlänge 7.5m bis 13m.",
+        "count": "Insgesamt 4 Stk."
+      }
+    }
   }
 }

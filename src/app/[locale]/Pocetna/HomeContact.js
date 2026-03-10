@@ -1,9 +1,12 @@
 "use client";
 
 import React from 'react';
+import { useTranslations } from 'next-intl';
+import { Link } from '../../../i18n/routing';
 import styles from './HomeContact.module.css';
 
 const HomeContact = () => {
+    const t = useTranslations('HomeContact');
     return (
         <section className={styles.contactSection}>
             {/* ─── Background Layer ─── */}
@@ -18,15 +21,14 @@ const HomeContact = () => {
                 <div className={styles.headerBlock}>
                     <div className={styles.sectionLabel}>
                         <div className={`${styles.labelLine} ${styles.right}`}></div>
-                        <span className={styles.labelText}>Kontakt</span>
+                        <span className={styles.labelText}>{t('section_label')}</span>
                         <div className={styles.labelLine}></div>
                     </div>
                     <h2 className={styles.headline}>
-                        Stupite u kontakt<span className={styles.headlineDot}>.</span>
+                        {t('headline')}<span className={styles.headlineDot}>.</span>
                     </h2>
                     <p className={styles.leadText}>
-                        Zainteresovani ste za saradnju ili imate pitanja o našim uslugama?
-                        Ostavite nam poruku i naš tim će vam odgovoriti u najkraćem roku.
+                        {t('lead_text')}
                     </p>
                 </div>
 
@@ -35,7 +37,7 @@ const HomeContact = () => {
                     <div className={styles.infoColumn}>
                         <img src="/Assets/logo.svg" alt="Extra Auto Transport" className={styles.companyLogo} />
 
-                        <h3 className={styles.companyName}>D.O.O. "Extra Auto Transport"</h3>
+                        <h3 className={styles.companyName}>{t('company_name')}</h3>
 
                         <div className={styles.contactList}>
                             <div className={styles.contactItem}>
@@ -46,8 +48,8 @@ const HomeContact = () => {
                                     </svg>
                                 </div>
                                 <div className={styles.itemContent}>
-                                    <span className={styles.itemLabel}>Adresa</span>
-                                    <span className={styles.itemValue}>Maršala Tita 56, 21460 Vrbas</span>
+                                    <span className={styles.itemLabel}>{t('address_label')}</span>
+                                    <span className={styles.itemValue}>{t('address_value')}</span>
                                 </div>
                             </div>
 
@@ -58,8 +60,8 @@ const HomeContact = () => {
                                     </svg>
                                 </div>
                                 <div className={styles.itemContent}>
-                                    <span className={styles.itemLabel}>Tel/Fax</span>
-                                    <span className={styles.itemValue}>+381 (0)25 720 701</span>
+                                    <span className={styles.itemLabel}>{t('phone_label')}</span>
+                                    <span className={styles.itemValue}>{t('phone_value')}</span>
                                 </div>
                             </div>
 
@@ -71,19 +73,19 @@ const HomeContact = () => {
                                     </svg>
                                 </div>
                                 <div className={styles.itemContent}>
-                                    <span className={styles.itemLabel}>Email</span>
-                                    <span className={styles.itemValue}>office@extraautotransport.com</span>
+                                    <span className={styles.itemLabel}>{t('email_label')}</span>
+                                    <span className={styles.itemValue}>{t('email_value')}</span>
                                 </div>
                             </div>
                         </div>
 
-                        <a href="/kontakt" className={styles.btnPrimary}>
-                            Svi Kontakti
+                        <Link href="/kontakt" className={styles.btnPrimary}>
+                            {t('all_contacts_btn')}
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
-                        </a>
+                        </Link>
                     </div>
 
                     {/* ─── Right Column: Form ─── */}
@@ -93,25 +95,25 @@ const HomeContact = () => {
                                 <div className={styles.formGrid}>
                                     <div className={styles.inputGroup}>
                                         <input type="text" className={styles.inputField} placeholder=" " required id="contactName" />
-                                        <label htmlFor="contactName" className={styles.inputLabel}>Ime i Prezime</label>
+                                        <label htmlFor="contactName" className={styles.inputLabel}>{t('form_name')}</label>
                                     </div>
                                     <div className={styles.inputGroup}>
                                         <input type="email" className={styles.inputField} placeholder=" " required id="contactEmail" />
-                                        <label htmlFor="contactEmail" className={styles.inputLabel}>Email adresa</label>
+                                        <label htmlFor="contactEmail" className={styles.inputLabel}>{t('form_email')}</label>
                                     </div>
                                     <div className={`${styles.inputGroup} ${styles.full}`}>
                                         <input type="tel" className={styles.inputField} placeholder=" " id="contactPhone" />
-                                        <label htmlFor="contactPhone" className={styles.inputLabel}>Telefon (opciono)</label>
+                                        <label htmlFor="contactPhone" className={styles.inputLabel}>{t('form_phone')}</label>
                                     </div>
                                     <div className={`${styles.inputGroup} ${styles.full}`}>
                                         <textarea className={styles.inputField} placeholder=" " required id="contactMessage"></textarea>
-                                        <label htmlFor="contactMessage" className={styles.inputLabel}>Poruka</label>
+                                        <label htmlFor="contactMessage" className={styles.inputLabel}>{t('form_message')}</label>
                                     </div>
                                 </div>
 
                                 <button type="submit" className={styles.submitBtn}>
                                     <div className={styles.btnBg}></div>
-                                    <span className={styles.btnText}>Pošalji Poruku</span>
+                                    <span className={styles.btnText}>{t('form_submit')}</span>
                                     <div className={styles.btnIcon}>
                                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                             <line x1="22" y1="2" x2="11" y2="13"></line>

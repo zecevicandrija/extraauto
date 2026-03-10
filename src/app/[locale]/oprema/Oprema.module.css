@@ -1,0 +1,320 @@
+.section {
+    position: relative;
+    padding: 160px 0 100px;
+    min-height: 100vh;
+    background-color: #fafafa;
+    color: #1e293b;
+    overflow: hidden;
+}
+
+.bgLayer {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.bgGrid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.8;
+}
+
+.bgOrb {
+    position: absolute;
+    top: -10%;
+    right: -5%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(220, 38, 38, 0.12) 0%, transparent 60%);
+    border-radius: 50%;
+    filter: blur(80px);
+}
+
+.bgOrb2 {
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(220, 38, 38, 0.08) 0%, transparent 60%);
+    border-radius: 50%;
+    filter: blur(90px);
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.headerBlock {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 80px;
+    animation: fadeDown 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sectionLabel {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.labelLine {
+    width: 40px;
+    height: 1px;
+    background: #dc2626;
+}
+
+.labelText {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #dc2626;
+    font-family: var(--font-montserrat);
+}
+
+.headline {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-family: var(--font-montserrat);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+    color: #0f172a;
+}
+
+.headlineDot {
+    color: #dc2626;
+}
+
+.leadText {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #475569;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.leadText:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+/* Equipment Grid */
+.equipmentGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    padding-top: 20px;
+}
+
+.itemCard {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.itemCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px -15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(220, 38, 38, 0.4);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.imageWrapper {
+    position: relative;
+    height: 240px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f1f5f9;
+}
+
+.itemImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.itemCard:hover .itemImage {
+    transform: scale(1.08);
+}
+
+.imageOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, transparent 60%);
+    opacity: 0.6;
+    transition: opacity 0.5s ease;
+}
+
+.itemCard:hover .imageOverlay {
+    opacity: 0.3;
+}
+
+.cardNumber {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    color: #0f172a;
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    z-index: 2;
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.itemCard:hover .cardNumber {
+    background: #dc2626;
+    color: #ffffff;
+    transform: scale(1.1) rotate(10deg);
+}
+
+.itemContent {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.itemTitle {
+    font-family: var(--font-montserrat);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.itemDesc {
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.itemMeta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.metaBadge {
+    display: inline-flex;
+    align-items: center;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    color: #334155;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.itemCard:hover .metaBadge {
+    background: rgba(220, 38, 38, 0.05);
+    border-color: rgba(220, 38, 38, 0.3);
+}
+
+.metaBadge svg {
+    margin-right: 6px;
+    color: #dc2626;
+}
+
+.cardGlow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #dc2626;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.itemCard:hover .cardGlow {
+    transform: scaleX(1);
+}
+
+/* Animations staggered for grid items */
+.equipmentGrid>div:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.equipmentGrid>div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.equipmentGrid>div:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.equipmentGrid>div:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.equipmentGrid>div:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.equipmentGrid>div:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.equipmentGrid>div:nth-child(n+7) {
+    animation-delay: 0.2s;
+}

@@ -1,7 +1,9 @@
 import React from 'react';
+import { useTranslations } from 'next-intl';
 import styles from './About.module.css';
 
 const About = () => {
+    const t = useTranslations('About');
     return (
         <section className={styles.about}>
             {/* ─── Background ─── */}
@@ -19,19 +21,19 @@ const About = () => {
                 {/* ─── Section Label ─── */}
                 <div className={styles.sectionLabel}>
                     <div className={styles.labelLine}></div>
-                    <span className={styles.labelText}>O Nama</span>
+                    <span className={styles.labelText}>{t('section_label')}</span>
                 </div>
 
                 {/* ─── Headline Block ─── */}
                 <div className={styles.headlineBlock}>
                     <div className={styles.headlineLeft}>
                         <h2 className={styles.headline}>
-                            Extra Auto<br />
-                            Transport<span className={styles.headlineDot}>.</span>
+                            {t('headline_1')}<br />
+                            {t('headline_2')}<span className={styles.headlineDot}>.</span>
                         </h2>
                         <div className={styles.yearBadge}>
                             <span className={styles.yearDot}></span>
-                            <span className={styles.yearText}>Osnovano 2007. godine</span>
+                            <span className={styles.yearText}>{t('year_founded')}</span>
                         </div>
                     </div>
 
@@ -39,13 +41,13 @@ const About = () => {
 
                     <div className={styles.headlineRight}>
                         <p className={styles.leadText}>
-                            „Extra Auto Transport" je domaća kompanija koja je osnovana 2007. godine. Raspolažemo savremenom mehanizacijom, sopstvenim servisom, visokostručnom i kvalitetnom radnom snagom.
+                            {t('lead_text_1')}
                         </p>
                         <p className={styles.leadHighlight}>
-                            Firme iz naše grupacije zapošljavaju više od 250 ljudi.
+                            {t('lead_text_2')}
                         </p>
                         <p className={styles.leadBottom}>
-                            Kvalitetnim radom, poštovanjem ugovorenih rokova i svojom poslovnošću, „Extra Auto Transport" se za kratko vreme svrstava u vodeće firme u Vojvodini i Srbiji kada su u pitanju radovi niskogradnje, putne privrede, vodoprivrede i mostogradnje.
+                            {t('lead_text_3')}
                         </p>
                     </div>
                 </div>
@@ -60,8 +62,8 @@ const About = () => {
                                 <path d="M6 12h.01M18 12h.01"></path>
                             </svg>
                         </div>
-                        <div className={styles.statNumber}>200+</div>
-                        <div className={styles.statLabel}>Radnih i Voznih Jedinica</div>
+                        <div className={styles.statNumber}>{t('stat_1_number')}</div>
+                        <div className={styles.statLabel}>{t('stat_1_label')}</div>
                         <div className={styles.statAccentLine}></div>
                     </div>
                     <div className={styles.statCard}>
@@ -72,8 +74,8 @@ const About = () => {
                                 <path d="M10 14h4v6h-4z"></path>
                             </svg>
                         </div>
-                        <div className={styles.statNumber}>Asfaltna Baza</div>
-                        <div className={styles.statLabel}>Kula</div>
+                        <div className={styles.statNumber}>{t('stat_2_number')}</div>
+                        <div className={styles.statLabel}>{t('stat_2_label')}</div>
                         <div className={styles.statAccentLine}></div>
                     </div>
                     <div className={styles.statCard}>
@@ -84,8 +86,8 @@ const About = () => {
                                 <path d="M2 12l10 5 10-5"></path>
                             </svg>
                         </div>
-                        <div className={styles.statNumber}>Kamenolom</div>
-                        <div className={styles.statLabel}>Ub, Čučuge</div>
+                        <div className={styles.statNumber}>{t('stat_3_number')}</div>
+                        <div className={styles.statLabel}>{t('stat_3_label')}</div>
                         <div className={styles.statAccentLine}></div>
                     </div>
                 </div>
@@ -93,7 +95,7 @@ const About = () => {
                 {/* ─── Subsidiary Companies ─── */}
                 <div className={styles.subsidiaryHeader}>
                     <div className={styles.labelLine}></div>
-                    <span className={styles.subsidiaryTitle}>Ćerke Firme</span>
+                    <span className={styles.subsidiaryTitle}>{t('subsidiary_title')}</span>
                 </div>
 
                 <div className={styles.subsidiaryGrid}>
@@ -113,7 +115,7 @@ const About = () => {
                         </div>
                         <h3 className={styles.subName}>Extra Agrar</h3>
                         <p className={styles.subDesc}>
-                            Ćerka firma Extra Agrar osnovana je početkom 2011. godine i za kratko vreme je postala pouzdan partner svojim kupcima i dobavljačima.
+                            {t('extra_agrar_desc')}
                         </p>
                         <div className={styles.subAccentLine}></div>
                     </div>
@@ -132,7 +134,7 @@ const About = () => {
                         </div>
                         <h3 className={styles.subName}>ZGOP</h3>
                         <p className={styles.subDesc}>
-                            ZGOP posluje u okviru Extra Auto Transport sistema i zadužena je za izgradnju i remont pruga.
+                            {t('zgop_desc')}
                         </p>
                         <div className={styles.subAccentLine}></div>
                     </div>
