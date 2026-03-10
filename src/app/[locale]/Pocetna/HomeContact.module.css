@@ -1,0 +1,530 @@
+/* ═══════════════════════════════════════════════════
+   HOME CONTACT — Premium Corporate Editorial (Light)
+   ═══════════════════════════════════════════════════ */
+
+.contactSection {
+  position: relative;
+  width: 100%;
+  background: #fafafa;
+  overflow: hidden;
+  padding: 120px 0 160px;
+}
+
+/* ─── Background Layer ─── */
+.bgLayer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bgGrid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(0, 0, 0, 0.22) 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+  opacity: 0.7;
+  mask-image: radial-gradient(ellipse 95% 90% at 50% 50%, black 40%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse 95% 90% at 50% 50%, black 40%, transparent 80%);
+}
+
+.bgGradient {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 70% at 85% 60%, rgba(228, 51, 58, 0.06) 0%, transparent 60%);
+}
+
+.bgOrb {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  right: -15%;
+  bottom: -20%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(228, 51, 58, 0.04) 0%, transparent 70%);
+  animation: orbFloat 25s ease-in-out infinite alternate;
+}
+
+/* ─── Container ─── */
+.container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+/* ═════════════════════════════════════
+   SECTION HEADER
+   ═════════════════════════════════════ */
+.headerBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  opacity: 0;
+  animation: reveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.labelLine {
+  width: 48px;
+  height: 2px;
+  background: #E4333A;
+  animation: lineGrow 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+  transform-origin: left;
+}
+
+.labelLine.right {
+  transform-origin: right;
+  animation-delay: 0.1s;
+}
+
+.labelText {
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #E4333A;
+}
+
+.headline {
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+  font-size: clamp(3rem, 4.5vw, 4.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  color: #0d0d0d;
+  opacity: 0;
+  animation: headlineIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards;
+  margin-bottom: 20px;
+}
+
+.headlineDot {
+  color: #E4333A;
+}
+
+.leadText {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: #666;
+  max-width: 500px;
+  opacity: 0;
+  animation: reveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+}
+
+/* ═════════════════════════════════════
+   SPLIT LAYOUT (Details | Form)
+   ═════════════════════════════════════ */
+.splitLayout {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 80px;
+}
+
+/* ─── Left Column: Info ─── */
+.infoColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  opacity: 0;
+  animation: reveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+}
+
+.companyLogo {
+  height: 64px;
+  width: auto;
+  margin-bottom: 32px;
+  align-self: flex-start;
+  opacity: 0.9;
+}
+
+.companyName {
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0d0d0d;
+  letter-spacing: -0.5px;
+  margin-bottom: 40px;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(228, 51, 58, 0.1);
+  color: #E4333A;
+  flex-shrink: 0;
+}
+
+.itemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.itemLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.itemValue {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0d0d0d;
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 36px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #fff;
+  background: #E4333A;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 16px rgba(228, 51, 58, 0.25);
+  align-self: flex-start;
+}
+
+.btnPrimary:hover {
+  background: #c92a30;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(228, 51, 58, 0.35);
+}
+
+.btnPrimary svg {
+  transition: transform 0.3s ease;
+}
+
+.btnPrimary:hover svg {
+  transform: translateX(4px);
+}
+
+/* ─── Right Column: Form ─── */
+.formColumn {
+  position: relative;
+  opacity: 0;
+  animation: reveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+}
+
+.formCard {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 56px 48px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 24px;
+  margin-bottom: 32px;
+}
+
+.inputGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup.full {
+  grid-column: 1 / -1;
+}
+
+.inputField {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #0d0d0d;
+  transition: all 0.3s ease;
+}
+
+.inputField:focus {
+  outline: none;
+  border-bottom-color: #E4333A;
+}
+
+.inputLabel {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  font-size: 0.9rem;
+  color: #888;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Floating label effect */
+.inputField:focus~.inputLabel,
+.inputField:not(:placeholder-shown)~.inputLabel {
+  top: -12px;
+  font-size: 0.75rem;
+  color: #E4333A;
+  font-weight: 600;
+}
+
+textarea.inputField {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.submitBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 24px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  color: #0d0d0d;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btnText {
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btnIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.05);
+  color: #0d0d0d;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.btnBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #E4333A;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1;
+}
+
+.submitBtn:hover {
+  border-color: #E4333A;
+}
+
+.submitBtn:hover .btnText {
+  color: #fff;
+}
+
+.submitBtn:hover .btnBg {
+  transform: scaleX(1);
+}
+
+.submitBtn:hover .btnIcon {
+  background: #fff;
+  color: #E4333A;
+  transform: translateX(4px);
+}
+
+/* ═════════════════════════════════════
+   KEYFRAMES
+   ═════════════════════════════════════ */
+@keyframes headlineIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+    filter: blur(4px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes lineGrow {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes orbFloat {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  100% {
+    transform: translate(-30px, 40px) scale(1.1);
+  }
+}
+
+/* ═════════════════════════════════════
+   RESPONSIVE
+   ═════════════════════════════════════ */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 32px;
+  }
+
+  .splitLayout {
+    gap: 48px;
+    grid-template-columns: 1fr 1.1fr;
+  }
+
+  .formCard {
+    padding: 48px 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .contactSection {
+    padding: 100px 0 120px;
+  }
+
+  .splitLayout {
+    grid-template-columns: 1fr;
+    gap: 64px;
+  }
+
+  .headerBlock {
+    margin-bottom: 56px;
+  }
+
+  .companyLogo {
+    height: 56px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: -40px;
+  }
+
+  .infoColumn {
+    align-items: center;
+    text-align: center;
+  }
+
+  .contactItem {
+    align-items: center;
+    text-align: left;
+  }
+
+  .btnPrimary {
+    align-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .contactSection {
+    padding: 80px 0 100px;
+  }
+
+  .headline {
+    font-size: 2.8rem;
+    letter-spacing: -1.5px;
+  }
+
+  .formCard {
+    padding: 40px 24px;
+    border-radius: 12px;
+  }
+
+  .formGrid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headline {
+    font-size: 2.2rem;
+    letter-spacing: -1px;
+  }
+
+  .leadText {
+    font-size: 0.95rem;
+  }
+
+  .companyLogo {
+    height: 48px;
+  }
+
+  .companyName {
+    font-size: 1.25rem;
+  }
+}

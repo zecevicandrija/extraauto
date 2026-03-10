@@ -1,0 +1,17 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 117" width="135" height="117">
+	<title>zgop-logo-svg</title>
+	<style>
+		.s0 { fill: #283894 } 
+		.s1 { fill: #2a2b76 } 
+		.s2 { fill: #ffffff } 
+	</style>
+	<path id="Layer" class="s0" d="m34.8 56.1l32.5-56.1 33.6 58.3 14.9 25.7h-48.2l-0.7 1.1h49.5l10 17.3h-69.5l-0.7 1.2h70.9l7.5 12.9h-134.6l34.2-59.2h46.5l4.4-7.7h-2.4l-3.7 6.5h-44.2z"/>
+	<path id="Layer" class="s1" d="m126.4 102.4l1.4 2.3h-72.7l1.3-2.3h70z"/>
+	<path id="Layer" class="s1" d="m115.8 84l1.3 2.3h-51.6l1.3-2.3h49z"/>
+	<path id="Layer" class="s1" d="m72.1 74.6h-3.5l-1.3 2.3h-42.7l-0.3-2.3h44.3l4-7.1h3.6l-4.1 7.1z"/>
+	<path id="Layer" class="s1" d="m34.8 56.1h44.2l4-7.1h3.6l-5.3 9.4h-47.8l0.1-0.1 1.2-2.2z"/>
+	<path id="Layer" class="s2" d="m52.8 102.4l5.3-9.4h63.2l5.6 9.4h-74.1z"/>
+	<path id="Layer" class="s2" d="m116.2 84h-53l5.4-9.4h42l5.6 9.4z"/>
+	<path id="Layer" class="s2" d="m23.7 74.6l5.5-9.4h44.7l-5.3 9.4h-44.9z"/>
+	<path id="Layer" class="s2" d="m34 56.1l5.6-9.4h44.7l-5.3 9.4h-45z"/>
+</svg>
